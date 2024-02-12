@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and Github</title>
+</head>
+<body>
+    <h1>Git</h1>
+    <p>Git is a version control system</p>
+    <p>Github is a cloud, where we can store our git code</p>
+    <h1>Git Commands</h1>
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>git init</td>
+            <td>To initialse the git into the particular folder, so that git can keep track of the activities being done in the folder.
+                Once the Git is initialsed, the files will be in Untracked status represented with a [U] symbol.
+                <br><br>
+
+            </td>
+        </tr>
+        <tr>
+            <td>git add filename</td>
+            <td>This command will change the status of the file from Untracked to Changes to be commited stage(Basically the Index is added)
+                [U -> A]
+            </td>
+        </tr>
+        <tr>
+            <td>git add .</td>
+            <td>To add all the untracked or Modified files to stagging area for commit</td>
+        </tr>
+        <tr>
+            <td>git status</td>
+            <td>With this command, we can see the status of the file whether the file is in Untracked, Modified or In Stagging area ready to be committed/pushed</td>
+        </tr>
+        <tr>
+            <td>git commit -m 'relatable message'</td>
+            <td>To commit the changes, which are stagged area. 
+                [Note: In the message, give a message in such a way that you can understand afterwards what you've done in that commit part]
+                <h1>If you're doing the commit for the first time, then you will get an error stating - 'Please tell me who you are'</h1>
+                <p>To resolve this error, run the below commands - </p>
+                <ol>
+                    <li>git config --global user.email "xyz@example.com"</li>
+                    <li>git config --global user.name "xyz"</li>
+                </ol>
+                <p>If you want to see/edit the config, run the below command - </p>
+                <ol><li>git config --global --edit</li></ol>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
