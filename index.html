@@ -51,6 +51,26 @@
                 <ol><li>git config --global --edit</li></ol>
             </td>
         </tr>
+        <tr>
+            <td>git log</td>
+            <td>This command is used to see the tracked versions of the code after committing the changes.
+                It will also give the commit id, which is useful to backtrack the code.
+            </td>
+        </tr>
+        <tr>
+            <td>git reset --hard commit_id</td>
+            <td>If in case, you did some mistake and unable to figure out what is the mistake, so with the help of this command we can go back 
+                to the previous version of the code.
+                [Note : --hard means it will remove the complete code part and then the head will point to the commit id]
+            </td>
+        </tr>
+        <tr>
+            <td>git reset --soft commit_id</td>
+            <td>If in case, you did some mistake and unable to figure out what is the mistake, so with the help of this command we can go back 
+                to the previous version of the code.
+                [Note : --soft means the code part will be there and head will point to the commit id version]
+            </td>
+        </tr>
     </table>
 </body>
 </html>
